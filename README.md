@@ -26,7 +26,7 @@
     <td><code>Function</code></td>
     <td>N/A</td>
     <td>Executed when the date is updated</td>
-    <td>No</td>
+    <td>Yes</td>
   </tr>
 </table>
 
