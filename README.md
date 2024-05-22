@@ -1,7 +1,7 @@
 # React Calendar component and Date Picker Test
 
 - Pick days, months, years, or even decades
-- No date library
+- No existing Calendar or DatePicker components used
 
 [Online Demo Here!](https://stackblitz.com/~/github.com/luckyboy07/react-app-calendar)
 
