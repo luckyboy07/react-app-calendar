@@ -17,7 +17,7 @@
     <td><code>date</code></td>
     <td><code>Date</code></td>
     <td><code>new Date()</code></td>
-    <td>Set initial date or selected date value 
+    <td>Set initial date value 
   </tr>
    <tr>
     <td><code>onSelect</code></td>
