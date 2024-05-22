@@ -53,5 +53,4 @@ To run linting, run:
 ```
 npm run lint
 ```
-
-This will run on port :8080
+This will automatically run in web browser to `http://localhost:8080/`
