@@ -1,3 +1,8 @@
+# React Calendar component and Date Picker Test
+
+- Pick days, months, years, or even decades
+- No date library
+
 # Usage
 
 ### Install dependencies
