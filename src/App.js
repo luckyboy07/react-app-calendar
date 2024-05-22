@@ -6,6 +6,7 @@ import './index.css';
 const App = () => {
     const [calendarDate, setCalendarDate] = useState(new Date());
     const [date, setDate] = useState(new Date());
+
     return (<div className="main">
         <Calendar date={calendarDate} onSelect={setCalendarDate} />
         <br />

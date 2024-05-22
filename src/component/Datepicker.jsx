@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 import { Manager, Reference, Popper } from "react-popper";
-import Calendar from './Calendar';
-import CalendarIcon from '../assets/calendar.png';
-
+import Calendar from "./Calendar";
+import CalendarIcon from "../assets/calendar.png";
 
 // eslint-disable-next-line react/prop-types
 const DatePicker = React.forwardRef(({ date, onSelect }, ref) => {
@@ -36,30 +35,26 @@ const DatePicker = React.forwardRef(({ date, onSelect }, ref) => {
             <Reference>
                 {({ ref }) => (
                     <div className="input-icons" ref={ref}>
-                        <img src={CalendarIcon} className="img-logo" onClick={() => showCalendar()}/>
+                        <img src={CalendarIcon} className="img-logo" onClick={() => showCalendar()} />
                         <input
                             className="input-field"
                             type="text"
-                            onFocus={(e) => showCalendar()}
+                            onFocus={() => showCalendar()}
                             value={formattedDate(date)}
                             readOnly
                         />
                     </div>
                 )}
             </Reference>
-            <Popper
-                placement="bottom-start"
-                innerRef={(node) => (popupNode.current = node)}
-            >
+            <Popper placement="bottom-start" innerRef={(node) => (popupNode.current = node)}>
                 {({ ref, placement }) =>
-                    isVisible ? (
+                    (isVisible ?
                         <Calendar
                             date={date}
                             data-placement={placement}
                             ref={ref}
-                            onSelect={selectDate}
-                        />
-                    ) : null
+                            onSelect={selectDate} /> : null
+                    )
                 }
             </Popper>
         </Manager>
@@ -68,11 +63,9 @@ const DatePicker = React.forwardRef(({ date, onSelect }, ref) => {
 
 function formattedDate (date) {
     if (!date) {
-        return '';
+        return "";
     }
-    const result = `${date?.getFullYear()}-${
-        date?.getMonth()
-    }-${date?.getDate()}`;
+    const result = `${date?.getFullYear()}-${date?.getMonth()}-${date?.getDate()}`;
     return result;
 }
 
