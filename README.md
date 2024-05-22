@@ -12,18 +12,21 @@
     <th>Type</th>
      <th>Default</th>
     <th>Description</th>
+     <th>Required</th>
   </tr>
   <tr>
     <td><code>date</code></td>
     <td><code>Date</code></td>
     <td><code>new Date()</code></td>
-    <td>Set initial date value 
+    <td>Set initial date value</td>
+    <td>No</td>
   </tr>
    <tr>
     <td><code>onSelect</code></td>
-    <td><code>Function</code> called when the user picks a valid date</td>
+    <td><code>Function</code></td>
     <td>N/A</td>
-    <td>Called when the date is selected
+    <td>Executed when the date is updated</td>
+    <td>No</td>
   </tr>
 </table>
 
