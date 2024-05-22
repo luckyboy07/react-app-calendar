@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+}
+.main {
+    margin: 10px;
+}
+.flex {
+    display: flex;
+  }
+.img-logo {
+    width: 20px;
+}
+.input-icons {
+    width: 120px;
+    margin-bottom: 10px;
+}
+.input-icons img {
+    width: 20px;
+    position: absolute;
+}
+.input-field {
+    width: 100%;
+    text-align: center;
+}
