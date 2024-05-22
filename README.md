@@ -41,4 +41,17 @@ npm install
 npm run start
 ```
 
+### Build
+```
+npm run build
+```
+### Eslint
+There is a `.eslintrc` config for eslint ready.
+
+To run linting, run:
+
+```
+npm run lint
+```
+
 This will run on port :8080
